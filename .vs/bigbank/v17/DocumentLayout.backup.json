@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bigbuddy\\source\\repos\\bigbank\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9515A55B-373B-492B-B066-A93FBE0CFBDA}|bigbank.csproj|c:\\users\\bigbuddy\\source\\repos\\bigbank\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9515A55B-373B-492B-B066-A93FBE0CFBDA}|bigbank.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9515A55B-373B-492B-B066-A93FBE0CFBDA}|bigbank.csproj|c:\\users\\bigbuddy\\source\\repos\\bigbank\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9515A55B-373B-492B-B066-A93FBE0CFBDA}|bigbank.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9515A55B-373B-492B-B066-A93FBE0CFBDA}|bigbank.csproj|c:\\users\\bigbuddy\\source\\repos\\bigbank\\migrations\\20241204163530_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9515A55B-373B-492B-B066-A93FBE0CFBDA}|bigbank.csproj|solutionrelative:migrations\\20241204163530_adduserstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\bigbuddy\\source\\repos\\bigbank\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\bigbuddy\\source\\repos\\bigbank\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:45:56.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\bigbuddy\\source\\repos\\bigbank\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\bigbuddy\\source\\repos\\bigbank\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:44:50.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20241204163530_AddUsersTable.cs",
+              "DocumentMoniker": "C:\\Users\\bigbuddy\\source\\repos\\bigbank\\Migrations\\20241204163530_AddUsersTable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241204163530_AddUsersTable.cs",
+              "ToolTip": "C:\\Users\\bigbuddy\\source\\repos\\bigbank\\Migrations\\20241204163530_AddUsersTable.cs",
+              "RelativeToolTip": "Migrations\\20241204163530_AddUsersTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:01:22.702Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
