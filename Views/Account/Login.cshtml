@@ -1,0 +1,51 @@
+@{
+    Layout = "_LoginLayout";
+    ViewData["Title"] = "Giriş Yap";
+}
+
+
+<div class="container">
+    <a href="/">
+        <img src="/img/logo.png" style="height: 100px; margin: auto; display: block; margin-top: 30px" />
+    </a>
+    <div class="row" style=" margin-top: 70px;">
+        <div class="col-md-6">
+            <form asp-action="loginPost" asp-controller="Account" method="post" style="background-color: #ffffff9e; padding: 20px; border-radius: 10px; margin-bottom: 50px;">
+                <button type="button" class="btn btn-primary" style="width: 49%;">BİREYSEL</button>
+                <button type="button" class="btn btn-light" style="width: 49%; color: #0d6efd">KURUMSAL</button>
+
+                <label for="username">T.C kimlik No / Kullanıcı Adı</label>
+                <br />
+                <i class="bi bi-person-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
+                <input type="text" name="username" id="username" placeholder="Kullanıcı Adı/TCKN" style="padding-left: 50px;" />
+                <br />
+                <label for="password">Parola</label>
+                <br />
+                <i class="bi bi-lock-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
+                <input type="password" name="password" id="password" placeholder="Parolanızı Giriniz" style="padding-left: 50px;" />
+
+                <button style="width: 100%; border: none; padding: 10px; margin-top: 20px; font-weight: bold; background-image: linear-gradient(277deg,#0d6efd,#002e58); color: white;">GİRİŞ YAP</button>
+
+                <br />
+                <br />
+                <i class="bi bi-lock-fill" style="position: absolute; font-size: 30px; padding: 5px; padding-left: 15px;"></i>
+                <button style="background-color: #ffffff59; width: 100%; border: none; padding: 20px; width:49%; font-size: 11px; padding-left: 50px;">PAROLAMI UNUTTUM</button>
+                <i class="bi bi-person-plus-fill" style="position: absolute; font-size: 30px; padding: 5px; padding-left: 15px;"></i>
+                <button style="background-color: #ffffff59; width: 100%; border: none; padding: 20px; width:49%; font-size: 11px; padding-left: 50px;">YENİ KULLANICI OLUŞTUR</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div style="background-color: rgba(0,16,30,.5); padding: 20px; border-radius: 10px; margin-bottom: 50px;">
+                <span style="text-align: center; color: white; display: block;">
+                    <b>QR Kod'la Giriş</b>
+                    <br />
+                    RBG mobil uygulaması üzerinden kodu okutarak hızlıca giriş yapabilirsiniz.
+                    <br />
+                    <img src="~/img/qr.jpg" style="margin-top: 15px; margin-bottom: 15px;"/>
+                    <br />
+                    QR’la giriş özelliği için RBG ‘Giriş Yap’ butonuna basmadan önce; Hızlı Menü > QR işlemleri > İnternet Şube Giriş sayfası adımlarını takip ediniz.
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
