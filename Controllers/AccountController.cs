@@ -18,6 +18,12 @@ namespace bigbank.Controllers
             return View();
         }
 
+        [HttpGet("/register")]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
         [HttpPost("/loginPost")]
         public IActionResult LoginPost(string username, string password)
         {
@@ -29,7 +35,21 @@ namespace bigbank.Controllers
             }
 
             ModelState.AddModelError(string.Empty, "Kullanıcı adı veya şifre hatalı.");
-            return View();
+            return View("Login");
+        }
+
+        [HttpPost("/registerPost")]
+        public IActionResult RegisterPost(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+                TempData["SuccessMessage"] = "Kayıt başarılı!";
+                return RedirectToAction("Login");
+            }
+
+            return View("Register", user);
         }
     }
 }
