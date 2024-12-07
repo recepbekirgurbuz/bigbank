@@ -1,0 +1,44 @@
+﻿@model bigbank.Models.User
+@{
+    Layout = "_LoginLayout";
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+
+<div class="container">
+    <a href="/">
+        <img src="/img/logo.png" style="height: 100px; margin: auto; display: block; margin-top: 30px" />
+    </a>
+    <div class="row" style=" margin-top: 70px;">
+        <div class="col-md-6" style="margin: auto;">
+            <form asp-action="registerPost" asp-controller="Account" method="post" style="background-color: #ffffff9e; padding: 20px; border-radius: 10px; margin-bottom: 50px;">
+                <label for="username">T.C kimlik No / Kullanıcı Adı</label>
+                <br />
+                <i class="bi bi-person-vcard-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
+                <input type="text" name="Username" id="username" placeholder="Kullanıcı Adı/TCKN" style="padding-left: 50px;" />
+                <br />
+                <label for="name">Adınız</label>
+                <br />
+                <i class="bi bi-person-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
+                <input type="text" name="Name" id="name" placeholder="Ad" style="padding-left: 50px;" />
+                <br />
+                <label for="surname">Soyadınız</label>
+                <br />
+                <i class="bi bi-person-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
+                <input type="text" name="Surname" id="surname" placeholder="Soyad" style="padding-left: 50px;" />
+                <br />
+                <label for="email">E-Posta</label>
+                <br />
+                <i class="bi bi-envelope-at-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
+                <input type="text" name="email" id="email" placeholder="example@mail.com" style="padding-left: 50px;" />
+                <br />
+                <label for="password">Parola</label>
+                <br />
+                <i class="bi bi-lock-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
+                <input type="password" name="Password" placeholder="Parolanızı Giriniz" id="password" style="padding-left: 50px;" />
+
+                <button style="width: 100%; border: none; padding: 10px; margin-top: 20px; font-weight: bold; background-image: linear-gradient(277deg,#0d6efd,#002e58); color: white;">KAYDOL</button>
+            </form>
+        </div>
+    </div>
+</div>
