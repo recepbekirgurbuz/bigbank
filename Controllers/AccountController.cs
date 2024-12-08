@@ -31,6 +31,10 @@ namespace bigbank.Controllers
 
             if (user != null)
             {
+                // Oturum bilgilerini saklama
+                HttpContext.Session.SetString("Username", user.Username);
+                HttpContext.Session.SetString("Name", user.Name);
+
                 return Content($"Hoş geldiniz, {user.Name} {user.Surname}!");
             }
 
