@@ -32,10 +32,10 @@ namespace bigbank.Controllers
             if (user != null)
             {
                 // Oturum bilgilerini saklama
+                HttpContext.Session.SetInt32("Id", user.Id);
                 HttpContext.Session.SetString("Username", user.Username);
-                HttpContext.Session.SetString("Name", user.Name);
 
-                return Content($"Hoş geldiniz, {user.Name} {user.Surname}!");
+                return Content($"Hoş geldiniz, {HttpContext.Session.GetString("Username")} {user.Surname}!");
             }
 
             ModelState.AddModelError(string.Empty, "Kullanıcı adı veya şifre hatalı.");

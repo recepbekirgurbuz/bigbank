@@ -17,6 +17,12 @@ namespace bigbank.Controllers
         public IActionResult Index()
         {
             var users = _context.Users.ToList();
+            
+            if (HttpContext.Session.GetInt32("Id") != null)
+            {
+                return Content($"Hoþ geldiniz, {HttpContext.Session.GetString("Username")}!");
+            }
+
             return View(users);
         }
     }
