@@ -35,7 +35,7 @@ namespace bigbank.Controllers
                 HttpContext.Session.SetInt32("Id", user.Id);
                 HttpContext.Session.SetString("Username", user.Username);
 
-                return Content($"Hoş geldiniz, {HttpContext.Session.GetString("Username")} {user.Surname}!");
+                return RedirectToAction("Index", "Home");
             }
 
             ModelState.AddModelError(string.Empty, "Kullanıcı adı veya şifre hatalı.");
@@ -50,7 +50,7 @@ namespace bigbank.Controllers
                 _context.Users.Add(user);
                 _context.SaveChanges();
                 TempData["SuccessMessage"] = "Kayıt başarılı!";
-                return RedirectToAction("Login");
+                return RedirectToAction("Login", "Account");
             }
 
             return View("Register", user);
