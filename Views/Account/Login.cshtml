@@ -11,15 +11,14 @@
     <div class="row" style=" margin-top: 70px;">
         <div class="col-md-6">
             <form asp-action="loginPost" asp-controller="Account" method="post" style="background-color: #ffffff9e; padding: 20px; border-radius: 10px; margin-bottom: 50px;">
-                <button type="button" class="btn btn-primary" style="width: 49%;">BİREYSEL</button>
-                <button type="button" class="btn btn-light" style="width: 49%; color: #0d6efd">KURUMSAL</button>
-
-                <label for="username">T.C kimlik No / Kullanıcı Adı</label>
+                <button type="button" style="width: 49%; background: #0d6efd; color: #fff; border: 0 !important; padding: 10px;">BİREYSEL</button>
+                <button type="button" style="width: 49%; color: #0d6efd; border: 0 !important; padding: 10px">KURUMSAL</button>
+                <label for="username" style="margin-top: 10px; margin-bottom: 10px;">T.C kimlik No / Kullanıcı Adı</label>
                 <br />
                 <i class="bi bi-person-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
                 <input type="text" name="username" id="username" placeholder="Kullanıcı Adı/TCKN" style="padding-left: 50px;" />
                 <br />
-                <label for="password">Parola</label>
+                <label for="password" style="margin-top: 10px; margin-bottom: 10px;">Parola</label>
                 <br />
                 <i class="bi bi-lock-fill" style="position: absolute; font-size: 20px; padding: 7px; padding-left: 15px;"></i>
                 <input type="password" name="password" id="password" placeholder="Parolanızı Giriniz" style="padding-left: 50px;" />
@@ -29,13 +28,13 @@
                 <br />
                 <br />
                 <i class="bi bi-lock-fill" style="position: absolute; font-size: 30px; padding: 5px; padding-left: 15px;"></i>
-                <button style="background-color: #ffffff59; width: 100%; border: none; padding: 20px; width:49%; font-size: 11px; padding-left: 50px;">PAROLAMI UNUTTUM</button>
+                <button style="background-color: #ffffff59; width: 100%; border: none; padding: 20px; width:49%; font-size: 11px; padding-left: 50px; font-weight: 500;">PAROLAMI UNUTTUM</button>
                 <i class="bi bi-person-plus-fill" style="position: absolute; font-size: 30px; padding: 5px; padding-left: 15px;"></i>
-                <button style="background-color: #ffffff59; width: 100%; border: none; padding: 20px; width:49%; font-size: 11px; padding-left: 50px;">YENİ KULLANICI OLUŞTUR</button>
+                <a href="/register" style="display: inline-block; background-color: #ffffff59; width: 100%; border: none; padding: 20px; width:49%; font-size: 11px; padding-left: 50px;">YENİ KULLANICI OLUŞTUR</a>
             </form>
         </div>
         <div class="col-md-6">
-            <div style="background-color: rgba(0,16,30,.5); padding: 20px; border-radius: 10px; margin-bottom: 50px;">
+            <div style="background-color: rgba(0,16,30,.5); padding: 20px; border-radius: 10px; margin-bottom: 150px;">
                 <span style="text-align: center; color: white; display: block;">
                     <b>QR Kod'la Giriş</b>
                     <br />
